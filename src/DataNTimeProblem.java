@@ -14,6 +14,8 @@ public class DataNTimeProblem {
          int month = userInput.nextInt();
          int year = userInput.nextInt();
 
+         userInput.close();
+
          System.out.println("Output of MM DD YEAR :" + month + " " + day + " " + year);
     }
     //This function calculated day without considering real calender
@@ -77,8 +79,10 @@ public static void main(String[] args){
 
     //findDay();
     //String returnedDay = findDay(8,05,2015);
-    String returnedDay = findDay(2,13,2010);
+    String returnedDay = findDay(12,28,2050);
      System.out.println(returnedDay);
+     String str = returnDay(12, 33,2023);
+    System.out.println(str);
    /* Calendar newCal = Calendar.getInstance();
    int year = 2015;
    int month = 12;
